@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<!--links-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="searchstyle.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link rel="stylesheet" href="navigationstyle.css">
+<meta charset="UTF-8">
+
+
+<head>
+    <!--header-->
+    <title>Search Page </title>
+</head>
+
+<body>
+    <!--navigation bar-->
+    <div class="nav">
+        <ul>
+            <li><a href="#"></a><img src="logo.png" class="logo-image"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="MensPage.html">Men</a>
+                <ul>
+                    <li><a href="Watches.html">Men's Watches</a></li>
+                    <li><a href="hats.html">Men's Hats</a>
+                    <li><a href="Sunglasses.html">Men's Sunglasses</a>
+                </ul>
+            </li>
+            <li><a href="WomensPage.html">Women</a>
+                <ul>
+                    <li><a href="Women Bag.html">Women's Bags</a></li>
+                    <li><a href="Jewellery.html">Jewelry</a>
+                    <li><a href="Hair Clips.html">Hair Clips</a>
+                </ul>
+            </li>
+            <li><a href="KidsPage.html">Kids</a>
+                <ul>
+                    <li><a href="Kids Hats.html">Kid's Hats</a></li>
+                    <li><a href="Kids Hair Clips.html">Hair Clips</a>
+                    <li><a href="Kids Hair Bands.html">Hair Bands</a>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="searchbox">
+        <input type="text" class="searchtext" placeholder="Type to search" onkeyup="searchfunction()" title="Type in a name">
+        <a class="fas fa-search"></a>
+    </div>
+
+    <!--shopping cart-->
+    <div class="shopping-cart">
+        <botton id="shopping-text">Shopping Cart</botton>
+        <i class="fas fa-shopping-cart"></i>
+    </div>
+
+    <!--left side of tghe page including sorting, and filterings options-->
+    <div class="leftgrid">
+
+        <!--sorting by price high to low and low to high-->
+        <div class="sorting">
+            <p>Sorting by</p>
+            <input type="radio" class="sorting_checkbox" name="sortprice" id="lowtohigh" onclick="sortProductslth()">
+            <label class="sort-check-box" for="lowtohigh">Sort by price: Low-High</label><br></br>
+
+            <input type="radio" class="sorting_checkbox" name="sortprice" id="hightolow" onclick="sortProductshtl()">
+            <label class="sort-check-box" for="hightolow">Sort by price: High-Low</label>
+        </div>
+
+
+        <!--division to filter by price with three different options of 0-50, 50-100, and 100-150-->
+        <div class="filtering" >
+            <div class="filter_by_price">
+                <p>Filtering by price:</p>
+                <input type="radio" class="filtering_checkbox" name="pricefilter" id="fifty"  onclick="filterProducts1()">
+                <label class="filter-check-box" for="fifty"> $ 0-50</label><br></br>
+                <input type="radio" class="filtering_checkbox" name="pricefilter" id="hundred" onclick="filterProducts2()">
+                <label class="filter-check-box" for="hundred"> $ 50-100</label><br></br>
+                <input type="radio" class="filtering_checkbox" name="pricefilter" id="hundredfifty" onclick="filterProducts3()">
+                <label class="filter-check-box" for="hundredfifty"> $ 100-150</label><br></br>
+            </div>
+
+            <!--divition to filter based on ratings between 1 to 5 stars-->
+            <div class="filter_by_rate">
+                <p>Filtering by rate:</p>
+                <div class="rate_one">
+                    <span class="fa fa-star checked" onclick=ratefilter()></span>
+                    <span class="fa fa-star" onclick=ratefilter()></span>
+                    <span class="fa fa-star" onclick=ratefilter()></span>
+                    <span class="fa fa-star" onclick=ratefilter()></span>
+                    <span class="fa fa-star" onclick=ratefilter()></span>
+                </div>
+                <div class="rate_two">
+                    <span class="fa fa-star checked" onclick=ratefilter2()></span>
+                    <span class="fa fa-star checked" onclick=ratefilter2()></span>
+                    <span class="fa fa-star" onclick=ratefilter2()></span>
+                    <span class="fa fa-star" onclick=ratefilter2()></span>
+                    <span class="fa fa-star" onclick=ratefilter2()></span>
+                </div>
+                <div class="rate_three">
+                    <span class="fa fa-star checked" onclick=ratefilter3()></span>
+                    <span class="fa fa-star checked" onclick=ratefilter3()></span>
+                    <span class="fa fa-star checked" onclick=ratefilter3()></span>
+                    <span class="fa fa-star" onclick=ratefilter3()></span>
+                    <span class="fa fa-star" onclick=ratefilter3()></span>
+                </div>
+                <div class="rate_four">
+                    <span class="fa fa-star checked" onclick=ratefilter4()></span>
+                    <span class="fa fa-star checked" onclick=ratefilter4()></span>
+                    <span class="fa fa-star checked" onclick=ratefilter4()></span>
+                    <span class="fa fa-star checked" onclick=ratefilter4()></span>
+                    <span class="fa fa-star" onclick=ratefilter4()></span>
+                </div>
+                <div class="rate_five" >
+                    <span class="fa fa-star checked" onclick=ratefilter5()></span>
+                    <span class="fa fa-star checked " onclick=ratefilter5()></span>
+                    <span class="fa fa-star checked" onclick=ratefilter5()></span>
+                    <span class="fa fa-star checked" onclick=ratefilter5()></span>
+                    <span class="fa fa-star checked" onclick=ratefilter5()></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+<!--section for all the products-->
+    <div class="rightgrid" id="right">
+      
+
+    </div>
+
+
+
+</body>
+
+
+<!--Footer Section-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="ft-col">
+                <!--about-->
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="ft-col">
+                <!--company section-->
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Return</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payement Option</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="ft-col">
+                <!--product section-->
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#">Jewellery</a></li>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">Hat</a></li>
+                    <li><a href="#">Bag</a></li>
+                    <li><a href="#">Sunglasses</a></li>
+                    <li><a href="#">Hair Clips</a></li>
+                    <li><a href="#">Kids Hat</a></li>
+                    <li><a href="#">Kids Hair band</a></li>
+                    <li><a href="#">Kids Hair Clips</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="ft-col">
+                <!--social media-->
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+<script src="products.js"></script>
+<script src="Javascript.js"></script>
+
+</html>

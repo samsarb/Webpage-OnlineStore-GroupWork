@@ -1,0 +1,553 @@
+
+/* CSS file for ADD-ON web page*/
+
+/* apply to the whole page*/
+*{
+    margin: 0mm;
+    padding: 0;
+    color: black;
+    
+}
+
+                         /* Navigation bar section*/
+.nav {
+    width: 100%;
+    background: #551036;
+    height: 100px;
+    z-index: -1;
+}
+                          /* style for the LOGO*/
+.logo-image{
+    display: relative;
+    width:120px;
+    height: 50px;
+    margin-top:0;
+    margin-left: 0;
+    padding-top: 0;
+    
+}
+                        /* Navigation bar section*/
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+li {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+ul li {
+    float: left;
+    margin-top:20px;
+}
+
+ul li a {
+    width: 150px;
+    color:white;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+ul li ul {
+    background: #551036;
+}
+ul li ul li {
+    float: none;
+}
+
+a:hover {
+    color:rgb(245, 225, 49);
+}
+
+ul li ul {
+    display: none;
+}
+
+ul li:hover ul{
+    display: block;
+}
+
+ 
+
+                             /* CSS for body section*/
+
+body{
+    background: #70719e98;
+    margin: auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 50px;
+    text-indent: 10px;
+    padding-top: 20px;
+    
+}
+
+h2{
+    padding-top: 50px;
+    font-size: 30px;
+    margin-left: 10px;
+    text-indent: 10px;
+}
+p{
+    font-size: 20px;
+}
+
+
+img{
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 20cm;
+    height: 15cm;
+    float: left;
+    border-radius: 5%;
+    object-fit: cover;
+    object-position: 0 20%;
+}
+
+.star {
+    float:top;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin-left: 5px;
+    text-indent: 10px;
+    
+  }
+  
+.checked{
+    color: rgb(248, 114, 4);
+
+}
+
+input{
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    background: white;
+    text-emphasis-color: black;
+    font-size: medium;
+}
+
+::placeholder{
+    color:#786fa6;
+}
+#price{
+    margin-left: 800px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+#quantity{
+    background-color:white;
+    width: 130px;
+    font-size: large;
+    text-align: center;
+    padding-left: 50px;
+    height: 20px;
+    margin-left: 10px;
+}
+                     /* CSS for searching bar section*/
+.searchbox {  
+    position: absolute;
+    top: 30px;
+    right: 130px; 
+    box-sizing: 10px;
+    
+    }
+.fa-search{
+    color:white;
+    text-decoration: none;
+}
+
+input[type=text] {  
+    padding: 1px;  
+    margin-top: 8px;  
+    font-size: 17px;  
+    text-emphasis-color: black;
+    
+    }
+
+                /* CSS for shopping cart section*/
+.shopping-cart{
+    position: absolute;
+    top: 40px;
+    right:5px;
+    
+}
+#shopping-text{
+    color: white;
+}
+
+.fa-shopping-cart{
+    color: white;
+    size: 10mm;
+
+}
+                    /* CSS for size form*/
+select{
+    border: none;
+    font-size: large;
+    width: 130px;
+    margin-top: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+                   /* CSS for adding to cart button*/
+.add{
+    background-color: white;
+    color: black;
+    border:none;
+    width: 130px;
+    margin-left: 50px;
+    text-align:center;
+    display: inline-block;
+    font-size: large;
+    margin-left: 10px;
+    height: 20px;
+}
+                      /* CSS for descriotion part*/
+.description{
+   clear:left;
+   padding-left: 60px;
+   padding-bottom: 100px;
+}
+#description{
+    margin-top: 20px;
+    font-size: x-large;
+    font-weight: 200;
+}
+
+
+
+                 /* CSS for aproduct page*/
+.ProductPage img{
+    margin-top: 15px;
+    float: left;
+    width: 10cm;
+    height: 8cm;
+    margin-right: 10px; 
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.ProductPage a {
+    font-size: larger;
+    font-weight: bold;
+    border: none;
+    margin-top: 15px;
+}
+
+
+.ProductPage a + p{
+    font-size: larger;
+    border: none;
+    margin: 20px;
+    margin-left: 10px;
+
+}
+
+
+
+
+.salesTitle {
+    text-align: center;
+    font-size: 28px;
+}
+
+
+                   /* CSS for landing page */
+.Homepage img{
+    width: 1100px;
+    height: 600px;
+    margin-left: 120px;
+    margin-right: auto;
+    margin-bottom: 150px;
+}
+ h3{
+     padding-top: 60px;
+     font-family: fantasy;
+ }
+
+                   /* CSS for submenues in product pages*/
+ .submenues{
+    display: inline-block;
+    padding-top:50px;
+    padding-left: 240px;
+    font-family: fantasy;
+    font-size: 28px;
+ }
+
+                 /* CSS for footer*/
+ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+.container{
+    max-width:1180px ;
+    margin: auto;
+    }
+
+
+.footer {
+    background:rgb(51, 0, 38) ;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-attachment:fixed;
+    margin-top: 250px;
+    clear: both;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap:wrap;
+}
+    
+
+.ft-col ul{
+    list-style:none;
+}
+
+.ft-col {
+  width:25%;
+ padding: 25px;      
+}
+
+.ft-col h4{
+  font-size: 18px;
+  color:#f3bc24e3;
+  text-transform:capitalize;
+  margin-bottom: 25px;
+  font-weight: 700;
+  position:relative;
+}
+
+.ft-col  h4:before{
+ content:"";
+ position: absolute;
+ left:0px;
+ bottom: -8px;
+ background:#f3bc24e3 ;
+ height:1px; 
+ box-sizing:border-box;
+ width:550px;
+ }
+
+.ft-col ul li:not(:last-child){
+ padding-left: 0px; 
+   }
+
+.ft-col ul li a {
+ margin-bottom: -140px;
+ font-size: 16px;
+ text-transform:capitalize;
+ color:rgb(194, 55, 101);
+ font-weight:300px;
+ display:inline;
+ transition: all .8s ease;
+ text-decoration:none;
+ padding-left: 40px;
+}
+
+.ft-col ul li a:hover{
+ color:rgb(245, 225, 49);
+ padding-left:8px;        
+}
+
+
+
+
+@media(max-width:767px){
+ .ft-col{
+ width: 10%;
+ margin-bottom:30px;
+ }
+
+}
+@media(max-width:570px){
+ .ft-col{
+ width: 100%;
+}
+}
+
+.fab{
+    color:white;
+    padding-right: 5mm;
+    padding-left: 10mm;
+}
+
+
+
+
+
+.leftgrid{
+    width: 300px;
+    position: relative;
+    float: left;
+    border: 3px white;
+    word-wrap: break-word;
+
+}
+.sorting{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    margin-left: 20px;
+    font-size:larger;
+    font-weight: bold;
+}
+.sorting p{
+    margin-bottom: 20px;
+    color:rgb(49, 20, 49);
+    text-decoration: underline;
+    
+}
+
+.sorting_checkbox{
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+.filtering{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    margin-left: 20px;
+    font-size:larger;
+    font-weight: bold;
+}
+.filtering p{
+    margin-bottom: 20px;
+    color:rgb(49, 20, 49);
+    text-decoration: underline;
+    padding-top: 40px;
+    
+}
+.filtering_checkbox{
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+.rate_one{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.rate_two{
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+.rate_three{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    
+}
+.rate_four{
+    margin-bottom: 10px;
+    margin-left: 10px;
+ 
+}
+.rate_five{ 
+    margin-bottom: 200px;
+    margin-left: 10px;
+   
+}
+
+.filter_by_rate{
+    margin-bottom: 200px;
+}
+
+
+.rightgrid{
+    display: grid;
+    grid-template-columns: 27% 27% 27% 27%;
+    border: #786fa6;
+    margin-right: 125px;
+    margin-left: 290px;
+    height: 100%;
+    
+    
+}
+
+.searchPage {
+    float: left;
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 5px;
+    padding-bottom:15px;
+}
+
+
+
+.products {
+    padding: 15px;      
+  }
+
+  .products a{
+    display: block;
+    white-space:nowrap;
+    text-align: center;
+    
+  }
+
+
+.searchPage img{
+    width: 200px;
+    height: 200px;
+    border: 2px;
+    object-fit: cover;
+    object-position: 40% 20%;
+
+}
+
+
+ 
+.searchPage p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.searchPage .star{
+  display: inline;
+  position: relative;
+  width: 1.1em;
+  white-space:nowrap;
+  
+}
+
+.searchPage .star > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+  }
+
+
+
+
